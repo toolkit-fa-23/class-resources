@@ -45,13 +45,13 @@
 
         </p>
         <div class="images-box">
-          <div class="image-container">
+          <div id = 'image-1' class="image-container">
             <img  alt="A very atmospheric image of a glowing, slightly sinister jack-o-lantern." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGx-DNLHpzv2MfVi1ofHdAW_ca1t97BEcvEA&s" />
           </div>
-          <div class="image-container">
+          <div id = 'image-2' class="image-container">
             <img alt = "An illuminated scraggly house in the middle of orange woods, surrounded by dead trees." src="https://s3.amazonaws.com/tns-assets/Media/Resources/Content/Homepage_v2/campus-community/3-TNS_Website-050114_Student_Life_437_RT.jpeg?n=1?&q=80" />
           </div>
-          <div class="image-container">
+          <div id = 'image-3' class="image-container">
             <img alt="A view from a mountain meadow with shrubs and pink flowers." src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" />
           </div>
         </div>
@@ -74,8 +74,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
+
+  #image-1, #image-3 {
+  flex-grow: 1;
+  }
+
+  #image-2 {
+  flex-grow: 2;
+  }
+
 
 #main-article {
   background-color: lightgrey;
